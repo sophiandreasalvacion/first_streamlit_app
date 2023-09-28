@@ -52,3 +52,5 @@ if add_button and add_my_fruit:
     my_cur.execute(f"INSERT INTO fruit_load_list (fruit_name) VALUES ('{add_my_fruit}')")
     my_cnx.commit()
     streamlit.success(f'{add_my_fruit} added successfully!')
+#This will not work correctly, but just go with it for now
+my_cur.execute("insert into fruit_load_list values ('from streamlit')")
